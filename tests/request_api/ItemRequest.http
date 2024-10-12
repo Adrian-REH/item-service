@@ -1,0 +1,35 @@
+//CREATE UNIQUE
+###
+POST  http://localhost:3000/items/ HTTP/1.1
+content-Type: application/json
+
+{
+    "name":"Item 4",
+    "price":"100000000",
+    "description":"This is the item 4 (OMG)"
+
+}
+
+
+//GET ALL
+###
+GET  http://localhost:3000/items/ HTTP/1.1
+
+
+//GET BY ID
+###
+GET  http://localhost:3000/items/holaquetal HTTP/1.1
+
+
+
+//UPDATE UNIQUE ID
+###
+PUT  http://localhost:3000/items/1728746243887 HTTP/1.1
+content-Type: application/json
+
+{
+    "price":"800"
+}
+
+###
+DELETE    http://localhost:3000/items/1728746271163 HTTP/1.1
